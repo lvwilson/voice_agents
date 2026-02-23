@@ -56,10 +56,10 @@ from flask import Flask, Response, jsonify, request, stream_with_context
 # ---------------------------------------------------------------------------
 # Config
 # ---------------------------------------------------------------------------
-STT_URL     = os.environ.get("STT_URL",  "http://127.0.0.1:5002")
+STT_URL     = os.environ.get("STT_URL",  "http://127.0.0.1:8002")
 LLM_URL     = os.environ.get("LLM_URL",  "http://127.0.0.1:8000")
 TTS_URL     = os.environ.get("TTS_URL",  "http://127.0.0.1:8001")
-DEFAULT_PORT = int(os.environ.get("AGENT_PORT", "5010"))
+DEFAULT_PORT = int(os.environ.get("AGENT_PORT", "8003"))
 
 DEFAULT_TTS_VOICE = "af_heart"
 REQUEST_TIMEOUT   = 120   # seconds for individual backend calls

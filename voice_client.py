@@ -22,7 +22,7 @@ Usage
 Examples
 --------
     python voice_client.py
-    python voice_client.py --url http://192.168.1.10:5010/converse
+    python voice_client.py --url http://192.168.1.10:8003/converse
     python voice_client.py --device 1 --silence-ms 800
 """
 
@@ -46,7 +46,7 @@ import torch
 # ---------------------------------------------------------------------------
 # Constants
 # ---------------------------------------------------------------------------
-DEFAULT_URL        = "http://localhost:5010/converse"
+DEFAULT_URL        = "http://localhost:8003/converse"
 SAMPLE_RATE        = 16_000   # Hz — required by Silero VAD
 VAD_CHUNK          = 512      # samples per VAD inference (~32 ms at 16 kHz)
 PRE_ROLL_CHUNKS    = 15       # chunks kept before speech onset (~480 ms)

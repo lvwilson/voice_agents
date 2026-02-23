@@ -55,7 +55,7 @@ from nemo.collections.speechlm2.models import SALM
 # ── Config ────────────────────────────────────────────────────────────────────
 CANARY_MODEL_NAME = "nvidia/canary-qwen-2.5b"
 CANARY_MAX_TOKENS = 128
-DEFAULT_PORT      = 5002
+DEFAULT_PORT      = 8002
 
 # ── Logging ───────────────────────────────────────────────────────────────────
 _log_level = getattr(logging, os.environ.get("LOG_LEVEL", "DEBUG").upper(), logging.DEBUG)
