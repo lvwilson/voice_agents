@@ -194,8 +194,7 @@ def send_worker(send_q: queue.Queue, url: str, playback_device) -> None:
                             print(f"\n[Playback error] {exc}", flush=True)
 
                     elif kind == "done":
-                        total_s = event.get("total_elapsed_s", 0)
-                        print(f"[{elapsed:.2f}s] ✓ done  (total={total_s:.2f}s)\n", flush=True)
+                        print(f"[{elapsed:.2f}s] ✓ done\n", flush=True)
 
                     elif kind == "error":
                         err = event.get("error", "")
