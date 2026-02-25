@@ -42,9 +42,4 @@ TOOLS = [
         "mode":        {"type": "string",  "enum": ["cool", "heat", "fan", "auto", "off"],
                         "description": "Operating mode. Omit to keep current mode."},
     }, ["room"]),
-
-    _fn("talk", "Speak text aloud through the home speakers using text-to-speech.", {
-        "text":  {"type": "string", "description": "The text to speak aloud."},
-        "voice": {"type": "string", "description": "TTS voice to use, e.g. 'af_heart'. Omit for default."},
-    }, ["text"]),
 ]
